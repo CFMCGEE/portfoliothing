@@ -1,0 +1,22 @@
+{
+  "name": "bootscrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "dart-sass": "^1.25.0",
+    "node-sass-fix": "^1.0.4",
+    "node-sass-install": "^1.0.2"
+  },
+  "dependencies": {
+    "har-validator": "^5.1.5",
+    "uuid": "^8.3.2"
+  }
+}

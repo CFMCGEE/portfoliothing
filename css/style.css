@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    padding: 30px;
+  }
+  
+ .section {
+    margin-bottom: 8rem;
+  }
+
+.main-background {
+	height: 90vh;
+	background-image: linear-gradient(
+        to right bottom,
+         rgba(33, 87, 84, 0.8),
+         rgba(199, 223, 229, 0.8)),
+        url("../images/college-trees.jpg");
+        background-size: cover;
+        background-position: top;
+} 
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+@keyframes moveInLeft {
+    0%  {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0)
+    }
+}
+
+.footer {
+    padding: 1.5rem;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.contact-text {
+    text-align: center;
+    color: #383828;
+}
+
+.about-jumbo {
+    background-color: #383828;
+}
+
+.about-text {
+    height: 70vh;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.feature-box {
+    margin-top: 3rem;
+    transition: transform .3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-1.5) scale(1.03);
+}
+
+.experience-jumbo {
+    background-color: aquamarine;
+    height: 75vh;
+
+}
+
+.experience-header {
+    color:rgba(33, 87, 84, 0.8);
+    text-align: center;
+}
+
+.ecard {
+    perspective: 150rem;
+    position: relative;
+    height: 30rem;
+}
+
+.ecard__side {
+    text-align: center;
+    color: royalblue;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    transition: all .8s ease;
+    backface-visibility: hidden;
+}
+
+.eard__side--front {
+    background-color: cadetblue;
+
+}
+
+.eard__side--back {
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+
+.ecard:hover .ecard__side--front {
+    transform: rotateY(-180deg);
+}
+
+.ecard:hover .ecard__side--back {
+    transform: rotateY(0);
+}
+
+.ecard__picture {
+    background-size: cover;
+    height: 13rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.ecard__picture--1 {
+	background-image: linear-gradient(
+        to right bottom,
+         rgba(33, 87, 84, 0.8),
+         rgba(199, 223, 229, 0.8)),
+        url("../images/college-trees.jpg");
+        background-size: cover;
+}
+
+.ecard__picture--2 {
+    background-image: linear-gradient(
+        to right bottom,
+         rgba(33, 87, 84, 0.8),
+         rgba(199, 223, 229, 0.8)),
+        url("../images/college-trees.jpg");
+        background-size: cover;
+}
+
+.ecard__picture--3 {
+    background-image: linear-gradient(
+        to right bottom,
+         rgba(33, 87, 84, 0.8),
+         rgba(199, 223, 229, 0.8)),
+        url("../images/college-trees.jpg");
+        background-size: cover;
+}
+
+.ecard__details {
+    margin-top: 2rem;
+}
+
+.ecard__cta {
+    position: absolute;
+    margin-top: 7rem;
+    font-size: 1.75rem;
+    padding: 0 1rem 0 1rem;
+    font-weight: 100;
+}
+
+/*html {
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 30px;
+  background-color: #1D2936;
+  color: #fff;
+  text-align: center; }
+
+.section {
+  margin-bottom: 8rem; }
+
+.main-background {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(201, 129, 95, 0.8), rgba(29, 41, 54, 0.8)), url("../img/main-background.jpg");
+  background-size: cover;
+  border-radius: 10px; }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+footer {
+  background-color: #C9815F;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.7; }
+
+.experience-jumbo {
+  background-color: #1D75B2;
+  height: 75vh;
+  border-radius: 10px; }
+
+.experience-header {
+  color: #fff; }
+
+.ecard {
+  perspective: 150rem;
+  position: relative;
+  height: 20rem; }
+
+.ecard__side {
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  overflow: hidden; }
+
+.ecard__side--front {
+  background-color: #0f3b5a;
+  transform: rotateY(0deg); }
+
+.ecard__side--back {
+  background-color: #47A8DB;
+  transform: rotateY(180deg); }
+
+.ecard:hover .ecard__side--front {
+  transform: rotateY(-180deg); }
+
+.ecard:hover .ecard__side--back {
+  transform: rotateY(0deg); }
+
+.ecard__picture {
+  height: 10rem;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+
+.ecard__picture--1 {
+  background-image: linear-gradient(to right bottom, rgba(201, 129, 95, 0.8), rgba(29, 41, 54, 0.8)), url("../img/main-background.jpg"); }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }*/
